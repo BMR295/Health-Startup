@@ -13,6 +13,11 @@
       "Bash(npm test *)",
       "Bash(npx expo lint *)",
       "Bash(npx tsc --noEmit *)"
+    ],
+    "deny": [
+      "Bash(git commit --no-verify *)",
+      "Bash(git commit -n *)",
+      "Bash(git config core.hooksPath *)"
     ]
   },
   "skillOverrides": {

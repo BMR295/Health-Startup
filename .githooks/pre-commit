@@ -1,0 +1,15 @@
+#!/bin/sh
+# Läuft vor jedem Commit. Schlägt eine Prüfung fehl, wird nicht committet.
+# Aktiviert über `git config core.hooksPath .githooks` (passiert bei `npm install` automatisch).
+set -e
+
+echo "Pre-Commit: Lint …"
+npm run --silent lint
+
+echo "Pre-Commit: Typecheck …"
+npm run --silent typecheck
+
+echo "Pre-Commit: Tests …"
+npm test --silent -- --ci
+
+echo "Pre-Commit: alles grün."

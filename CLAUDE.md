@@ -23,6 +23,9 @@ Nichts gilt als fertig, weil es plausibel aussieht.
 
 - `npx expo lint` und `npx tsc --noEmit` laufen lassen, bevor eine Aufgabe
   als erledigt gemeldet wird.
+- Vor jedem Commit laufen Lint, Typecheck und Tests automatisch
+  (`.githooks/pre-commit`). Schlägt der Hook fehl: Ursache beheben.
+  Nie mit `--no-verify` umgehen, Hook nie abschalten oder abschwächen.
 - Jedes UI-Feature muss gestartet und angesehen werden: im iOS-Simulator,
   solange der noch nicht eingerichtet ist über `npx expo start --web`
   und einen Screenshot.
