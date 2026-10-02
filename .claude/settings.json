@@ -1,5 +1,48 @@
 {
   "enabledPlugins": {
     "expo@claude-plugins-official": true
+  },
+  "permissions": {
+    "allow": [
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(git status *)",
+      "Bash(npm run lint *)",
+      "Bash(npm run test *)",
+      "Bash(npm run typecheck *)",
+      "Bash(npm test *)",
+      "Bash(npx expo lint *)",
+      "Bash(npx tsc --noEmit *)"
+    ]
+  },
+  "skillOverrides": {
+    "firecrawl": "off",
+    "firecrawl-agent": "off",
+    "firecrawl-company-directories": "off",
+    "firecrawl-competitive-intel": "off",
+    "firecrawl-crawl": "off",
+    "firecrawl-dashboard-reporting": "off",
+    "firecrawl-deep-research": "off",
+    "firecrawl-demo-walkthrough": "off",
+    "firecrawl-developer-index": "off",
+    "firecrawl-download": "off",
+    "firecrawl-interact": "off",
+    "firecrawl-knowledge-base": "off",
+    "firecrawl-knowledge-ingest": "off",
+    "firecrawl-lead-gen": "off",
+    "firecrawl-lead-research": "off",
+    "firecrawl-map": "off",
+    "firecrawl-market-research": "off",
+    "firecrawl-monitor": "off",
+    "firecrawl-parse": "off",
+    "firecrawl-qa": "off",
+    "firecrawl-research-index": "off",
+    "firecrawl-research-papers": "off",
+    "firecrawl-scrape": "off",
+    "firecrawl-search": "off",
+    "firecrawl-seo-audit": "off",
+    "firecrawl-shop": "off",
+    "firecrawl-website-design-clone": "off",
+    "firecrawl-workflows": "off"
   }
 }
