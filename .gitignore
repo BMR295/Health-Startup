@@ -46,3 +46,6 @@ example
 .env
 .env.*
 !.env.example
+
+# persoenliche Claude-Code-Einstellungen (z. B. Pfad zur Obsidian-Vault)
+.claude/settings.local.json
